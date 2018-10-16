@@ -1,0 +1,12 @@
+*.[oa]
+*~
+*.pyc
+*.pyo
+*.class
+*.cache
+_trial_temp*
+MANIFEST
+dist/
+build/
+*.egg-info
+
