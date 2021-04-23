@@ -1,6 +1,10 @@
-import sys
-from PySide2 import QtCore, QtWidgets
+# works:
+# from PySide2 import QtCore, QtWidgets
 
+# "works", but segfaults on exit:
+from PySide6 import QtCore, QtWidgets
+
+import sys
 app = QtWidgets.QApplication(sys.argv)
 
 from twisted.application import reactors
