@@ -33,20 +33,23 @@ classifiers = [
     'License :: OSI Approved :: MIT License',
     'Operating System :: OS Independent',
     'Programming Language :: Python',
-    'Programming Language :: Python :: 2',
-    'Programming Language :: Python :: 2.6',
-    'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
     'Natural Language :: English',
     'Topic :: Software Development :: Libraries :: Python Modules'
 ]
 
 setup(
     name='pyside2reactor',
-    version='1.0.0',
+    version='21.4.1',
     license='MIT',
     classifiers=classifiers,
     author='Crossbar',
-    description='Twisted Qt PySide2 Integration',
+    description='Twisted integration with PySide6 (Qt6) and PySide2 (Qt5)',
     long_description=read('README.rst'),
     url='https://github.com/crossbario/pyside2reactor',
     download_url='https://github.com/crossbario/pyside2reactor/tarball/master/',

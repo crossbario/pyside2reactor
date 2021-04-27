@@ -40,7 +40,7 @@ import sys
 
 if __name__ == '__main__':
     from twisted.application import reactors
-
+    # for now, this reactor works on both pyside/qt6 and pyside2/qt5
     reactors.installReactor('pyside2')
 
 from zope.interface import implementer
@@ -49,9 +49,12 @@ from twisted.python import log, runtime
 from twisted.internet import posixbase
 
 try:
-    from PySide2 import QtCore
+    from PySide6 import QtCore
 except ImportError:
-    raise Exception("Must Have PySide2")
+    try:
+        from PySide2 import QtCore
+    except ImportError:
+        raise Exception("Must Have PySide6 (Qt6) or PySide2 (Qt5)")
 
 
 # noinspection PyBroadException,PyProtectedMember
